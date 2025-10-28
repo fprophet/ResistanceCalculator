@@ -31,6 +31,7 @@
             button1 = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
             // button1
@@ -58,11 +59,19 @@
             panel2.Size = new Size(200, 100);
             panel2.TabIndex = 0;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(98, 86);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(733, 398);
+            Controls.Add(textBox1);
             Controls.Add(panel1);
             Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
@@ -70,18 +79,15 @@
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
-        private MaskedTextBox maskedTextBox1;
-        private TextBox textBox1;
   
         private Panel panel1;
         private Panel panel2;
-   
-
-      
+        private TextBox textBox1;
     }
 }
