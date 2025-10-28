@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace ResistanceCalculator.Objects
 {
-    internal class ColorData
+    internal class Band
     {
-        public int ColorNumber { get; set; }
-        public Color Color { get; set; }
+        public BandColor ColorData { get; set; }
+
+        public int BandPosition { get; set; }
     }
 }
