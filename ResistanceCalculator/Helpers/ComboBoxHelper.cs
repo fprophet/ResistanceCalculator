@@ -12,16 +12,16 @@ namespace ResistanceCalculator.Helpers
     {
         public static List<BandColor> BandColors { get; private set; } = new List<BandColor>()
         {
-                new BandColor{Digit = 0, Color = Color.Black, Multiplier = 1, Tollerance = "" },
-                new BandColor{Digit = 1, Color = Color.Brown, Multiplier = 10, Tollerance = "±1%" },
-                new BandColor{Digit = 2, Color = Color.Red, Multiplier = 100, Tollerance = "±2%" },
-                new BandColor{Digit = 3, Color = Color.Orange, Multiplier = 1000, Tollerance = "" },
-                new BandColor{Digit = 4, Color = Color.Yellow, Multiplier = 10000, Tollerance = "" },
-                new BandColor{Digit = 5, Color = Color.Green, Multiplier = 100000, Tollerance = "±5%" },
-                new BandColor{Digit = 6, Color = Color.Blue, Multiplier = 1000000, Tollerance = "±0.25%" },
-                new BandColor{Digit = 7, Color = Color.Violet, Multiplier = 10000000, Tollerance = "±0.1%" },
-                new BandColor{Digit = 8, Color = Color.Gray, Multiplier = 1 , Tollerance = "±0.05%"},
-                new BandColor{Digit = 9, Color = Color.White, Multiplier = 1, Tollerance = "" },
+                new BandColor{Digit = 0, Color = Color.Black, Multiplier = Math.Pow(10, 0), Tollerance = "" },
+                new BandColor{Digit = 1, Color = Color.Brown, Multiplier = Math.Pow(10, 1), Tollerance = "±1%" },
+                new BandColor{Digit = 2, Color = Color.Red, Multiplier = Math.Pow(10, 2), Tollerance = "±2%" },
+                new BandColor{Digit = 3, Color = Color.Orange, Multiplier = Math.Pow(10, 3), Tollerance = "±0.05" },
+                new BandColor{Digit = 4, Color = Color.Yellow, Multiplier = Math.Pow(10, 4), Tollerance = "±0.02" },
+                new BandColor{Digit = 5, Color = Color.Green, Multiplier = Math.Pow(10, 5), Tollerance = "±5%" },
+                new BandColor{Digit = 6, Color = Color.Blue, Multiplier = Math.Pow(10, 6), Tollerance = "±0.25%" },
+                new BandColor{Digit = 7, Color = Color.Violet, Multiplier = Math.Pow(10, 7), Tollerance = "±0.1%" },
+                new BandColor{Digit = 8, Color = Color.Gray, Multiplier = Math.Pow(10, 8) , Tollerance = "±0.05%"},
+                new BandColor{Digit = 9, Color = Color.White, Multiplier = Math.Pow(10, 9), Tollerance = "" },
                 new BandColor{Digit = 10, Color = Color.Gold, Multiplier = 0.1, Tollerance = "±5%" },
                 new BandColor{Digit = 11, Color = Color.Silver, Multiplier = 0.01, Tollerance = "±10%" }
         };

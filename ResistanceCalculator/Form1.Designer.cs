@@ -31,7 +31,7 @@
             button1 = new Button();
             panel1 = new Panel();
             panel2 = new Panel();
-            textBox1 = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -41,7 +41,7 @@
             button1.Name = "button1";
             button1.Size = new Size(82, 22);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Calculate";
             button1.UseVisualStyleBackColor = true;
             // 
             // panel1
@@ -59,19 +59,20 @@
             panel2.Size = new Size(200, 100);
             panel2.TabIndex = 0;
             // 
-            // textBox1
+            // label1
             // 
-            textBox1.Location = new Point(98, 86);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            label1.AutoSize = true;
+            label1.Location = new Point(98, 91);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(733, 398);
-            Controls.Add(textBox1);
+            Controls.Add(label1);
             Controls.Add(panel1);
             Controls.Add(button1);
             Margin = new Padding(3, 2, 3, 2);
@@ -88,6 +89,6 @@
   
         private Panel panel1;
         private Panel panel2;
-        private TextBox textBox1;
+        private Label label1;
     }
 }

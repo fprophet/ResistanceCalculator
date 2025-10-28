@@ -1,4 +1,4 @@
-using ResistanceCalculator.Helpers;
+﻿using ResistanceCalculator.Helpers;
 using ResistanceCalculator.Objects;
 
 namespace ResistanceCalculator
@@ -20,6 +20,7 @@ namespace ResistanceCalculator
         {
             double result = 0;
             string digitConcat = "";
+            string tollerance = "";
 
 
             var boxes = panel1.Controls.OfType<ComboBox>();
@@ -43,9 +44,13 @@ namespace ResistanceCalculator
                 {
                     digitConcat += color.Digit.ToString();
                 }
+                else
+                {
+                    tollerance = color.Tollerance;
+                }
             }
 
-            textBox1.Text = result.ToString();
+            label1.Text = NumberHelper.FormatNumber(result) + "Ω " + tollerance;
         }
 
         private void Form1_Load(object sender, EventArgs e)
